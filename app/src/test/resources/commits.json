@@ -1,0 +1,161 @@
+[{
+  "sha": "884f37e0663e516937759a0a7d23af705ecfaaec",
+  "node_id": "MDY6Q29tbWl0ODkyMjc1Ojg4NGYzN2UwNjYzZTUxNjkzNzc1OWEwYTdkMjNhZjcwNWVjZmFhZWM=",
+  "commit": {
+    "author": {
+      "name": "Jake Wharton",
+      "email": "jakew@google.com",
+      "date": "2020-01-28T18:35:52Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2020-01-28T18:35:52Z"
+    },
+    "message": "Merge pull request #3289 from square/jwilson.0128.bugcrowd\n\nMigrate bug bounty URL to bugcrowd",
+    "tree": {
+      "sha": "523e2030587ee0f68a39dca74e2315a10821c706",
+      "url": "https://api.github.com/repos/square/retrofit/git/trees/523e2030587ee0f68a39dca74e2315a10821c706"
+    },
+    "url": "https://api.github.com/repos/square/retrofit/git/commits/884f37e0663e516937759a0a7d23af705ecfaaec",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJeMH8ICRBK7hj4Ov3rIwAAdHIIALCyxlPZrDFi7C0+Ovfa6pOY\nCKeTVbZx4HKjhLD70WmQeJaF/HXS64mO0EfuZ4QOeNCTnC88IjN3Hy/8ECaR8P8z\nb1RIqAxZng0IvMrSgp+O35rSEFHTCR+efILrYKfgdTq8w8yv64VL88gfgt0O6p+A\n16AKv0mcfR2OznyzX22v9uIhU3taQw1YysGV4mBCT7XVAR3vrkNV5DlHDKECVDw1\nUaxekxEUL2dxCPXuzeSI5KO/Ir6RCRMjPbh82xbt0O13XdvSwFmkgr48Q+qcqv2U\nZTjCAflXLJ3rBQZHWXlFaBMN8si8IheMgQPVJY1TbFdIPU1Vuj4xnO5jecQu5J0=\n=PYz/\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 523e2030587ee0f68a39dca74e2315a10821c706\nparent b9e23ba5b8df0fdae6339c8580b534a7a21b4856\nparent 9cae76004053e8675fde1c64db120d7c295f63c6\nauthor Jake Wharton <jakew@google.com> 1580236552 -0500\ncommitter GitHub <noreply@github.com> 1580236552 -0500\n\nMerge pull request #3289 from square/jwilson.0128.bugcrowd\n\nMigrate bug bounty URL to bugcrowd"
+    }
+  },
+  "url": "https://api.github.com/repos/square/retrofit/commits/884f37e0663e516937759a0a7d23af705ecfaaec",
+  "html_url": "https://github.com/square/retrofit/commit/884f37e0663e516937759a0a7d23af705ecfaaec",
+  "comments_url": "https://api.github.com/repos/square/retrofit/commits/884f37e0663e516937759a0a7d23af705ecfaaec/comments",
+  "author": {
+    "login": "JakeWharton",
+    "id": 66577,
+    "node_id": "MDQ6VXNlcjY2NTc3",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/66577?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/JakeWharton",
+    "html_url": "https://github.com/JakeWharton",
+    "followers_url": "https://api.github.com/users/JakeWharton/followers",
+    "following_url": "https://api.github.com/users/JakeWharton/following{/other_user}",
+    "gists_url": "https://api.github.com/users/JakeWharton/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/JakeWharton/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/JakeWharton/subscriptions",
+    "organizations_url": "https://api.github.com/users/JakeWharton/orgs",
+    "repos_url": "https://api.github.com/users/JakeWharton/repos",
+    "events_url": "https://api.github.com/users/JakeWharton/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/JakeWharton/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [{
+    "sha": "b9e23ba5b8df0fdae6339c8580b534a7a21b4856",
+    "url": "https://api.github.com/repos/square/retrofit/commits/b9e23ba5b8df0fdae6339c8580b534a7a21b4856",
+    "html_url": "https://github.com/square/retrofit/commit/b9e23ba5b8df0fdae6339c8580b534a7a21b4856"
+  },
+    {
+      "sha": "9cae76004053e8675fde1c64db120d7c295f63c6",
+      "url": "https://api.github.com/repos/square/retrofit/commits/9cae76004053e8675fde1c64db120d7c295f63c6",
+      "html_url": "https://github.com/square/retrofit/commit/9cae76004053e8675fde1c64db120d7c295f63c6"
+    }
+  ]
+},
+  {
+    "sha": "9cae76004053e8675fde1c64db120d7c295f63c6",
+    "node_id": "MDY6Q29tbWl0ODkyMjc1OjljYWU3NjAwNDA1M2U4Njc1ZmRlMWM2NGRiMTIwZDdjMjk1ZjYzYzY=",
+    "commit": {
+      "author": {
+        "name": "Jesse Wilson",
+        "email": "jwilson@squareup.com",
+        "date": "2020-01-28T18:31:28Z"
+      },
+      "committer": {
+        "name": "Jesse Wilson",
+        "email": "jwilson@squareup.com",
+        "date": "2020-01-28T18:31:28Z"
+      },
+      "message": "Migrate bug bounty URL to bugcrowd",
+      "tree": {
+        "sha": "523e2030587ee0f68a39dca74e2315a10821c706",
+        "url": "https://api.github.com/repos/square/retrofit/git/trees/523e2030587ee0f68a39dca74e2315a10821c706"
+      },
+      "url": "https://api.github.com/repos/square/retrofit/git/commits/9cae76004053e8675fde1c64db120d7c295f63c6",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/square/retrofit/commits/9cae76004053e8675fde1c64db120d7c295f63c6",
+    "html_url": "https://github.com/square/retrofit/commit/9cae76004053e8675fde1c64db120d7c295f63c6",
+    "comments_url": "https://api.github.com/repos/square/retrofit/commits/9cae76004053e8675fde1c64db120d7c295f63c6/comments",
+    "author": {
+      "login": "swankjesse",
+      "id": 133019,
+      "node_id": "MDQ6VXNlcjEzMzAxOQ==",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/133019?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/swankjesse",
+      "html_url": "https://github.com/swankjesse",
+      "followers_url": "https://api.github.com/users/swankjesse/followers",
+      "following_url": "https://api.github.com/users/swankjesse/following{/other_user}",
+      "gists_url": "https://api.github.com/users/swankjesse/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/swankjesse/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/swankjesse/subscriptions",
+      "organizations_url": "https://api.github.com/users/swankjesse/orgs",
+      "repos_url": "https://api.github.com/users/swankjesse/repos",
+      "events_url": "https://api.github.com/users/swankjesse/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/swankjesse/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "swankjesse",
+      "id": 133019,
+      "node_id": "MDQ6VXNlcjEzMzAxOQ==",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/133019?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/swankjesse",
+      "html_url": "https://github.com/swankjesse",
+      "followers_url": "https://api.github.com/users/swankjesse/followers",
+      "following_url": "https://api.github.com/users/swankjesse/following{/other_user}",
+      "gists_url": "https://api.github.com/users/swankjesse/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/swankjesse/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/swankjesse/subscriptions",
+      "organizations_url": "https://api.github.com/users/swankjesse/orgs",
+      "repos_url": "https://api.github.com/users/swankjesse/repos",
+      "events_url": "https://api.github.com/users/swankjesse/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/swankjesse/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [{
+      "sha": "b9e23ba5b8df0fdae6339c8580b534a7a21b4856",
+      "url": "https://api.github.com/repos/square/retrofit/commits/b9e23ba5b8df0fdae6339c8580b534a7a21b4856",
+      "html_url": "https://github.com/square/retrofit/commit/b9e23ba5b8df0fdae6339c8580b534a7a21b4856"
+    }]
+  }
+]
