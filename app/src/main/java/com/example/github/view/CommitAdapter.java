@@ -21,6 +21,12 @@ public class CommitAdapter extends RecyclerView.Adapter<CommitAdapter.CommitView
         this.list = list;
     }
 
+    public void update(List<GithubResponse> newList){
+        list.clear();
+        list.addAll(newList);
+        notifyDataSetChanged();
+    }
+
     @NonNull
     @Override
     public CommitViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

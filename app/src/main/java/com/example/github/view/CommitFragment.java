@@ -9,12 +9,17 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.github.R;
+import com.example.github.model.GithubResponse;
 import com.example.github.viewmodel.GithubViewModel;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -33,7 +38,16 @@ public class CommitFragment extends Fragment {
         viewModel = new ViewModelProvider(this, GithubViewModel.getFactory())
                 .get(GithubViewModel.class);
 
+        viewModel.isLoading().observe(getViewLifecycleOwner(), isLoading -> {
+            if(Boolean.TRUE.equals(isLoading)){
+                showLoadingText();
+            }else{
+                hideLoadingText();
+            }
+        });
 
+        viewModel.getResponse().observe(getViewLifecycleOwner(),
+                githubResponses -> updateCommitList(githubResponses));
 
         return inflater.inflate(R.layout.fragment_commit, container, false);
     }
@@ -49,6 +63,10 @@ public class CommitFragment extends Fragment {
         commitList.setLayoutManager(new LinearLayoutManager(getContext(),
                 RecyclerView.VERTICAL, false));
 
+        commitList.setAdapter(new CommitAdapter(new ArrayList<>()));
+        DividerItemDecoration decoration = new DividerItemDecoration(getContext(), DividerItemDecoration.VERTICAL);
+        commitList.addItemDecoration(decoration);
+
         searchButton.setOnClickListener(v -> viewModel.loadCommitList(
                 owner.getText().toString(), repo.getText().toString()));
 
@@ -61,6 +79,12 @@ public class CommitFragment extends Fragment {
 
     private void hideLoadingText(){
         loadingView.setVisibility(View.GONE);
+    }
+
+    private void updateCommitList(List<GithubResponse> list){
+        if(commitList.getAdapter() != null) {
+            ((CommitAdapter) commitList.getAdapter()).update(list);
+        }
     }
 }
 

@@ -20,8 +20,8 @@ public class GithubViewModel extends ViewModel {
         this.commitRepository = commitRepository;
     }
 
-    private MutableLiveData<Boolean> loading;
-    private MutableLiveData<List<GithubResponse>> response;
+    private MutableLiveData<Boolean> loading = new MutableLiveData<>();
+    private MutableLiveData<List<GithubResponse>> response = new MutableLiveData<>();
 
     public static ViewModelProvider.Factory getFactory() {
         return new ViewModelProvider.Factory() {
@@ -47,7 +47,7 @@ public class GithubViewModel extends ViewModel {
             List<GithubResponse> commitList = commitRepository.getCommitList(owner, repo);
             loading.postValue(false);
             response.postValue(commitList);
-        });
+        }).start();
     }
 
 }
