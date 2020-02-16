@@ -41,7 +41,7 @@ public class GithubViewModel extends ViewModel {
         return response;
     }
 
-    void loadCommitList(String owner, String repo){
+    public void loadCommitList(String owner, String repo){
         new Thread(() ->{
             loading.postValue(true);
             List<GithubResponse> commitList = commitRepository.getCommitList(owner, repo);
