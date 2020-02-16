@@ -17,6 +17,10 @@ public class CommitAdapter extends RecyclerView.Adapter<CommitAdapter.CommitView
 
     private List<GithubResponse> list;
 
+    public CommitAdapter(List<GithubResponse> list){
+        this.list = list;
+    }
+
     @NonNull
     @Override
     public CommitViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -47,7 +51,5 @@ public class CommitAdapter extends RecyclerView.Adapter<CommitAdapter.CommitView
         public CommitViewHolder(@NonNull View itemView) {
             super(itemView);
         }
-
-
     }
 }
