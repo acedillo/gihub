@@ -39,9 +39,9 @@ public class CommitFragment extends Fragment {
                 .get(GithubViewModel.class);
 
         viewModel.isLoading().observe(getViewLifecycleOwner(), isLoading -> {
-            if(Boolean.TRUE.equals(isLoading)){
+            if (Boolean.TRUE.equals(isLoading)) {
                 showLoadingText();
-            }else{
+            } else {
                 hideLoadingText();
             }
         });
@@ -73,16 +73,16 @@ public class CommitFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
     }
 
-    private void showLoadingText(){
+    private void showLoadingText() {
         loadingView.setVisibility(View.VISIBLE);
     }
 
-    private void hideLoadingText(){
+    private void hideLoadingText() {
         loadingView.setVisibility(View.GONE);
     }
 
-    private void updateCommitList(List<GithubResponse> list){
-        if(commitList.getAdapter() != null) {
+    private void updateCommitList(List<GithubResponse> list) {
+        if (commitList.getAdapter() != null) {
             ((CommitAdapter) commitList.getAdapter()).update(list);
         }
     }

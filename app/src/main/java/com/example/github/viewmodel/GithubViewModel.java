@@ -16,7 +16,7 @@ public class GithubViewModel extends ViewModel {
 
     private CommitRepository commitRepository;
 
-    public GithubViewModel(CommitRepository commitRepository){
+    public GithubViewModel(CommitRepository commitRepository) {
         this.commitRepository = commitRepository;
     }
 
@@ -33,16 +33,16 @@ public class GithubViewModel extends ViewModel {
         };
     }
 
-    public LiveData<Boolean> isLoading(){
+    public LiveData<Boolean> isLoading() {
         return loading;
     }
 
-    public LiveData<List<GithubResponse>> getResponse(){
+    public LiveData<List<GithubResponse>> getResponse() {
         return response;
     }
 
-    public void loadCommitList(String owner, String repo){
-        new Thread(() ->{
+    public void loadCommitList(String owner, String repo) {
+        new Thread(() -> {
             loading.postValue(true);
             List<GithubResponse> commitList = commitRepository.getCommitList(owner, repo);
             loading.postValue(false);

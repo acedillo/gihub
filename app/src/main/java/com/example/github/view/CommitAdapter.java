@@ -17,11 +17,11 @@ public class CommitAdapter extends RecyclerView.Adapter<CommitAdapter.CommitView
 
     private List<GithubResponse> list;
 
-    public CommitAdapter(List<GithubResponse> list){
+    public CommitAdapter(List<GithubResponse> list) {
         this.list = list;
     }
 
-    public void update(List<GithubResponse> newList){
+    public void update(List<GithubResponse> newList) {
         list.clear();
         list.addAll(newList);
         notifyDataSetChanged();
@@ -48,7 +48,7 @@ public class CommitAdapter extends RecyclerView.Adapter<CommitAdapter.CommitView
         return list.size();
     }
 
-    public static class CommitViewHolder extends RecyclerView.ViewHolder{
+    public static class CommitViewHolder extends RecyclerView.ViewHolder {
 
         TextView name = itemView.findViewById(R.id.commit_view_name);
         TextView message = itemView.findViewById(R.id.commit_view_message);

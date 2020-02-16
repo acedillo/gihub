@@ -20,9 +20,9 @@ public class RetrofitCommitRepository implements CommitRepository {
         try {
             response = call.execute();
         } catch (IOException e) {
-            e.printStackTrace();
+            //NOP
         }
         return response == null || response
-                .body() == null ? new ArrayList<GithubResponse>() : response.body();
+                .body() == null ? new ArrayList<>() : response.body();
     }
 }

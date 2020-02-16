@@ -10,5 +10,5 @@ import retrofit2.http.Path;
 
 public interface ApiInterface {
     @GET("{owner}/{repo}/commits")
-    Call<List<GithubResponse>> getCommits(@Path("owner") String owner, @Path("repo")String repo);
+    Call<List<GithubResponse>> getCommits(@Path("owner") String owner, @Path("repo") String repo);
 }

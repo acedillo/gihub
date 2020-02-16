@@ -21,7 +21,7 @@ public class GithubResponse {
         this.commit = commit;
     }
 
-    public static class Commit{
+    public static class Commit {
         Author author;
         String message;
 
@@ -42,7 +42,7 @@ public class GithubResponse {
         }
     }
 
-    public static class Author{
+    public static class Author {
         String name;
 
         public String getName() {

@@ -34,9 +34,10 @@ public class GithubViewModelTest {
     public InstantTaskExecutorRule rule = new InstantTaskExecutorRule();
 
     @Before
-    public void setup(){
+    public void setup() {
         repository = mock(CommitRepository.class);
-        Type listType = new TypeToken<List<GithubResponse>>() {}.getType();
+        Type listType = new TypeToken<List<GithubResponse>>() {
+        }.getType();
         List<GithubResponse> list = new Gson().fromJson(loadFile(), listType);
         when(repository.getCommitList(any(), any())).thenReturn(list);
         subject = new GithubViewModel(repository);
@@ -58,10 +59,10 @@ public class GithubViewModelTest {
 
     }
 
-    private String loadFile(){
+    private String loadFile() {
         InputStream is;
         try {
-           is = new FileInputStream("src/test/resources/commits.json");
+            is = new FileInputStream("src/test/resources/commits.json");
         } catch (FileNotFoundException e) {
             return "";
         }
@@ -70,14 +71,14 @@ public class GithubViewModelTest {
 
         String line;
         try {
-             line = reader.readLine();
+            line = reader.readLine();
         } catch (IOException e) {
             return "";
         }
 
         StringBuilder sb = new StringBuilder();
 
-        while(line != null){
+        while (line != null) {
             sb.append(line).append("\n");
             try {
                 line = reader.readLine();
